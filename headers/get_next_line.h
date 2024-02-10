@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   get_next_line.h                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: switt <switt@student.42.fr>                +#+  +:+       +#+        */
+/*   By: prossi <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/07/05 16:27:19 by switt             #+#    #+#             */
-/*   Updated: 2023/08/12 04:06:42 by switt            ###   ########.fr       */
+/*   Created: 2021/10/14 17:23:59 by prossi            #+#    #+#             */
+/*   Updated: 2022/02/22 18:58:50 by prossi           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,15 +17,14 @@
 # include <unistd.h>
 
 # ifndef BUFFER_SIZE
-#  define BUFFER_SIZE 25
+#  define BUFFER_SIZE 5
 # endif
 
+char	*ft_substr(char const *s, unsigned int start, size_t len);
+int		ft_strlen(const char *str);
+char	*ft_strchr(const char *s, int i);
+char	*ft_strdup(const char *s);
+char	*ft_strjoin(char const *s1, char const *s2);
 char	*get_next_line(int fd);
-char	*ft_update_static(char *str);
-char	*ft_extract_line(char *str);
-char	*ft_read_all(int fd, char *str);
-size_t	ft_strlen(const char *str);
-char	*ft_strchr(const char *s, int f);
-char	*ft_strjoin(char *readstr, char *buffer);
 
 #endif
