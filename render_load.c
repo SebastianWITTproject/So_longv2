@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   graphics.c                                         :+:      :+:    :+:   */
+/*   render_load.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: seb <seb@student.42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/25 19:06:51 by prossi            #+#    #+#             */
-/*   Updated: 2024/02/10 18:33:15 by seb              ###   ########.fr       */
+/*   Updated: 2024/02/13 14:35:44 by seb              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -70,7 +70,6 @@ void	adding_in_graphics(t_complete *game)
 			{
 				mlx_put_image_to_window(game->mlxpointer,
 				game->winpointer, game->floor, width * 30, height * 30);
-				printf("test");
 			}
 			width++;
 		}

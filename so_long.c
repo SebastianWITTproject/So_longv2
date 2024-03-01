@@ -6,7 +6,7 @@
 /*   By: seb <seb@student.42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/18 16:49:02 by prossi            #+#    #+#             */
-/*   Updated: 2024/02/10 19:20:53 by seb              ###   ########.fr       */
+/*   Updated: 2024/02/28 14:12:36 by seb              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,11 +39,11 @@ int	exit_point(t_complete *game)
 int	main(int argc, char **argv)
 {
 	t_complete	game;
-	printf("hi");
+
 	if (argc != 2)
 		return (0);
 	ft_memset(&game, 0, sizeof(t_complete));
-	if(!map_reading(&game, argv))
+	if (!map_reading(&game, argv))
 	{
 		printf("Error\n");
 		printf("Map source issue");
